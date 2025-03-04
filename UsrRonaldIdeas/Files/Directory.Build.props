@@ -1,0 +1,11 @@
+<Project>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/Activity/Activity.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/Activity/Activity.cs')" />
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldEvaluationscore/UsrRonaldEvaluationscore.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldEvaluationscore/UsrRonaldEvaluationscore.cs')" />
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldExpenses/UsrRonaldExpenses.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldExpenses/UsrRonaldExpenses.cs')" />
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldFeedbackScore/UsrRonaldFeedbackScore.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldFeedbackScore/UsrRonaldFeedbackScore.cs')" />
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldIdeas/UsrRonaldIdeas.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldIdeas/UsrRonaldIdeas.cs')" />
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldStatus/UsrRonaldStatus.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldStatus/UsrRonaldStatus.cs')" />
+		<Compile Include="$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldType/UsrRonaldType.cs" Condition="Exists('$(PkgPath)/UsrRonaldIdeas/Schemas/UsrRonaldType/UsrRonaldType.cs')" />
+	</ItemGroup>
+</Project>
